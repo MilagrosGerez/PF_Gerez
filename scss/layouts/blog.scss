@@ -1,9 +1,52 @@
-.container{
-    @media screen { min-width: 300px; max-width: 1200px;}
-    @include flex (column, center, center, 20px);
+.contar{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width :768px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    background-color: $blue;
+    &:nth-child(2){
+
+        background-color: $main-color;
+    }
   }
-  .container-pages {
+  .contar-pages {
       height: 100%;
-      width: 90%;
-     
+      width: 100%;
+      border-radius: 10px;
+      border: $ssecond-color;
+       &:hover{
+            background-color: $main-color;
+            color: $ligth-color;
+        }
+        &:hover:nth-child(2){
+            background-color: $blue;
+            
+        }
+      .content{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: flex-end;
+       
+        
+      }
+      img{
+        height: 300px;
+        width: 40%;
+      }
+    
+
+      p{
+        text-align: justify;
+      //  background-image: url(../../imagenes/fondos/208882-P06PQ6-429.jpg);
+      }
+    
   }
