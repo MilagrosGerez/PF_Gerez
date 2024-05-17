@@ -1,0 +1,72 @@
+main{
+    h1{
+        text-decoration: underline;
+        text-align: center;
+    }
+    .formularios{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        form{
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+            background-image: linear-gradient(#9e1a006c,#bd370e67 ),url(../../imagenes/fondos/208882-P06PQ6-429.jpg);
+            input{
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid black;
+                &:placerholder{
+                    color: $ligth-color;
+                    text-decoration: solid;
+                    text-size-adjust: 5rem;
+                }
+                
+            }
+            textarea{
+                    width: 100%;
+                    height: auto;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid black;
+                    color: $third-color;
+                    text-decoration: solid;
+                    font-size: large;
+                }
+            .enviar{
+                border: 3px solid black;
+                color: $third-color;
+            }
+        }
+    }
+    
+      }
+      .lugar {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: column;
+         align-content: center;
+         align-items: center;
+         justify-content: space-between;
+      }
+      .redes {
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+         text-align: center;
+         a{
+            text-decoration: none;
+            color: $ligth-color;
+            background-color: $main-color;
+            border-radius: 10px;
+         }
+         &:hover a{
+            scale: (1.3);
+            background-color: $fourth-color;
+            color: $third-color;
+         }
+      }
+   
+      
+     

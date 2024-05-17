@@ -1,0 +1,125 @@
+body{
+ main{
+     background-color: $main-color;
+     color: $ligth-color;
+ 
+   
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .box{
+   // width: 70%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+   // background-image: url(https://www.freepik.es/vector-gratis/fondo-abstracto-rojo_1506359.htm#fromView=search&page=2&position=43&uuid=8fde9553-4169-4847-bec5-7a8e0cac9a5d);
+   // filter: blur(5);
+    padding: 20px;
+    @include flex(row, center, center, 10px);
+    .circle{
+        width: 100%;
+        height: 100px;
+        background-color: $ligth-color;
+        filter: blur(150px);
+        border-radius: 100%;
+        position: absolute;
+      }
+    h1{
+      text-decoration: underline;
+    }
+    
+    
+    .presentacion{
+      width: 50%;
+      height: 300px;
+      text-align: center;
+     // background-color: $ssecond-color;
+      &:hover{
+        transform: scale(1.2);
+      }
+      
+    }
+    .presupuesto{
+    color: $ligth-color;
+    padding: 20px;
+    background-color: $ssecond-color;
+    }
+  }
+  
+  .container{
+    padding: 20px;
+    @include flex(row, center, center, 10px);
+    .card{
+      //display: grid;
+     // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      background-color: $fourth-color;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+     
+  
+      img{
+        height: 500px;
+        width: 50%;
+        object-fit: cover;
+
+      }
+      .producto{
+      @include flex(row, center, center, 10px);
+      height: 100%;
+      
+  
+      .producto-content{
+        color: $third-color; 
+        transition: 0.5s;
+        gap: 10px;
+        width: 80%;
+  
+  
+        &:hover{
+         background-color: $third-color;
+         color: $fourth-color;
+         scale: (1.1);
+         padding: 15px;
+        }
+        
+      }
+      a{
+        text-decoration: none;
+        color: $second-color;
+        padding: 5px ;
+      }
+  
+    }
+    }
+    
+  }
+  @media screen and (min-width:768px) {
+    .container{
+          width: 100%;
+         display: block;
+         .card{
+         @include flex (column, center, center, 15px);
+        
+         }
+         .card{
+              img{
+                @include img (50%, 400px, cover);
+              }
+        }
+      
+    }
+    .box{
+         width: 100%;
+         
+         padding: 20px;
+         margin-bottom: 3px;
+    }
+  } 
+}
+}

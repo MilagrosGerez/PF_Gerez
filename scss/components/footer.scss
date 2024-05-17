@@ -1,0 +1,35 @@
+footer{
+    padding: 10px;
+   background-color: $main-color;
+   color: $ligth-color
+}
+.Links{
+ 
+   @include flex(row, space-around, stretch, 10px );
+   flex-wrap: nowrap !important;
+    a{
+        text-decoration: none;
+        color: $ligth-color;
+    }
+
+    .Links-left{
+     width: 50%;
+     @include flex(column,space-between, center, 10px);
+    }
+    .Links-rigth{
+     width: 50%;
+    }
+}
+.Derechos{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .Links{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+}

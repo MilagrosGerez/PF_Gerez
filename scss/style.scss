@@ -1,0 +1,15 @@
+//Base
+@import 'bases/vars.scss';
+@import 'bases/reset.scss';
+@import 'bases/utilities.scss';
+
+//Components
+@import 'components/footer.scss';
+@import 'components/navbar.scss';
+
+//Layouts
+@import 'layouts/acerca';
+@import 'layouts/blog';
+@import 'layouts/contacto';
+@import 'layouts/index';
+@import 'layouts/proyectos';

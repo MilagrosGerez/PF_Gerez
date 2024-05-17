@@ -1,0 +1,49 @@
+
+  .carousel{
+    padding: 10px;
+    height: 350px;
+    width: 100%;
+   .placeholder{
+    background-color: $ligth-color;
+    color: $third-color;
+   }
+  }
+  .container{
+    @include flex(row, center, center, 5px);
+    width: 100%;
+    flex-wrap: wrap;
+    @media screen { min-width: 300px; max-width: 1200px;}
+      .producto{
+        gap: 5px;
+       .producto-content{
+        transition: 0.5s;
+        img{
+          height: 400px;
+          width: 70%;
+        }
+        &:hover{
+          border-radius: 15px;
+          background-color: $second-color;
+          color: $third-color;
+        }
+    a{
+      display: grid;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: $main-color;
+      color: $ligth-color;
+      
+      transition: 0.5s;
+      text-align: center;
+      
+    }
+    &:hover a{
+      background-color: $fourth-color;
+      color: $third-color;
+    }
+   
+    }
+      }
+      
+  }
+    
